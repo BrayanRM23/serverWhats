@@ -1,0 +1,2 @@
+server-basico funcional. envia sms
+server2-me falta configurar unas cosas en la plataforma de twilo. es el que deberia enviar el mensaje a whatsap
