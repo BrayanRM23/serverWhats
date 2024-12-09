@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const twilio = require('twilio');
+require('dotenv').config();
 
 const app = express();
 
@@ -13,8 +14,8 @@ app.use(cors({
 }));
 
 // Configuración de Twilio
-const accountSid = 'AC2096c68c89101a7cbda4d22cf807f7d0';
-const authToken = 'de2932e0af1445cb3df931564a08f611';
+const accountSid = process.env.PATO
+const authToken = process.env.PETO;
 const client = new twilio(accountSid, authToken);
 
 // Número fijo de destino
